@@ -15,7 +15,7 @@ export default function Home() {
       <FloatingHearts />
 
       {/* ── The greeting ─────────────────────────────────────────── */}
-      <section className="relative z-10 flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center px-6 py-20 text-center">
+      <section className="relative z-10 flex min-h-dvh flex-col items-center justify-center px-6 py-20 text-center">
         <p
           className="rise text-xs tracking-[0.35em] text-dusk uppercase sm:text-sm"
           style={{ animationDelay: "0.1s" }}

@@ -25,9 +25,11 @@ export default function GalleryPage() {
 
       <PhotoGrid photos={photos} />
 
+      {/* Not the letter — that only unlocks after she says yes on /rsvp.
+          This just puts her back on the main path. */}
       <div className="mt-20 text-center">
-        <LinkButton href="/letter" variant="quiet">
-          {site.letter.title}
+        <LinkButton href="/invitation" variant="quiet">
+          {site.home.cta}
         </LinkButton>
       </div>
     </section>

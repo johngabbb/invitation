@@ -1,6 +1,6 @@
 import { site } from "@/content/site";
 import FloatingHearts from "@/components/FloatingHearts";
-import LinkButton from "@/components/LinkButton";
+import Nav from "@/components/Nav";
 import Ornament from "@/components/Ornament";
 import Reveal from "@/components/Reveal";
 
@@ -9,6 +9,9 @@ export const metadata = { title: "A Letter" };
 export default function LetterPage() {
   return (
     <>
+      {/* The only page with the menu. By the time she's here she's read
+          everything, so let her wander back through it freely. */}
+      <Nav />
       <FloatingHearts count={6} />
 
       <section className="relative z-10 mx-auto max-w-xl px-6 py-20 sm:py-28">
@@ -38,9 +41,7 @@ export default function LetterPage() {
           </article>
         </Reveal>
 
-        <Reveal delay={0.2} className="mt-16 text-center">
-          <LinkButton href="/rsvp">{site.rsvp.question}</LinkButton>
-        </Reveal>
+        {/* No button onward — the letter is the last thing she reads. */}
       </section>
     </>
   );

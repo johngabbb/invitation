@@ -55,25 +55,43 @@ export const site = {
   details: {
     intro: "Everything you need to know, and nothing you don't.",
     expect: [
-      "[ something to look forward to ]",
-      "[ something else ]",
-      "[ and one more ]",
+      "MOVIE/AVATAR",
+      "FOOD",
+      "GIFT",
+      "GAMES",
+      "SPECIAL SURPRISE EVENT",
     ],
     cta: "I'll be there",
   },
 
   /** Page: /rsvp */
   rsvp: {
-    question: "So… will you come?",
+    question: "NO STINKY OKAY?",
     yes: "Yes ♥",
     no: "No",
     /** Shown after she presses yes. */
     afterYes: {
-      title: "I knew it.",
-      body: "[ Say something here — the last thing she reads on this site. ]",
+      title: "",
+      body: "HEHEHEHEHEH",
     },
-    /** Tiny text under the buttons. Leave "" to hide. */
+    /** Tiny text under the buttons, before she's tried anything. Leave "" to hide. */
     footnote: "(the other button is not a real option)",
+    /**
+     * One per attempt at the "No" button, in order. After the last one it
+     * stays on the last message, so add or remove freely.
+     */
+    noMessages: [
+      "Nice try.",
+      "Nope.",
+      "It moved. It'll keep moving.",
+      "You're not faster than me, pamkin.",
+      "That button has never worked. Not once.",
+      "Seriously?",
+      "I built this thing. I know where all the exits are.",
+      "Okay, genuine respect for the persistence.",
+      "You've spent longer avoiding yes than it would take to say it.",
+      "Fine. Chase it forever. The other button is still right there. ♥",
+    ],
   },
 
   /** Page: /letter */

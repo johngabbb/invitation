@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { site } from "@/content/site";
-import Nav from "@/components/Nav";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -31,7 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfair.variable} ${inter.variable} antialiased`}>
-        <Nav />
+        {/* No site-wide nav — she moves through the story with the button on
+            each page. The menu is rendered by /letter alone, once she's
+            reached the end and everything is fair game. */}
         <main>{children}</main>
       </body>
     </html>

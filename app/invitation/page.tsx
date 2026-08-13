@@ -10,7 +10,7 @@ export default function InvitationPage() {
     <>
       <FloatingHearts count={8} />
 
-      <section className="relative z-10 flex min-h-[calc(100vh-3.5rem)] items-center justify-center px-5 py-20">
+      <section className="relative z-10 flex min-h-dvh items-center justify-center px-5 py-20">
         <div
           className="rise w-full max-w-2xl"
           style={{ animationDelay: "0.15s" }}

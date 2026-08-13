@@ -9,7 +9,7 @@ export default function RsvpPage() {
     <>
       <FloatingHearts count={10} />
 
-      <section className="relative z-10 flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center px-5 py-20">
+      <section className="relative z-10 flex min-h-dvh flex-col items-center justify-center px-5 py-20">
         <div className="w-full max-w-xl">
           <h1
             className="rise mb-14 text-center font-display text-4xl text-balance text-wine sm:text-5xl"
